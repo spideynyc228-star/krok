@@ -3,13 +3,25 @@
   "period_months": 3,
   "active_user_months": 52,
   "total_tokens_est": 6027830,
+  "monthly_observed_tokens_est": 2009277,
+  "monthly_token_capacity": null,
+  "capacity_utilisation": null,
+  "capacity_status": "не передана — TCO распределён на логи в отчёте",
+  "monthly_tco_components_rub": {
+    "Амортизация GPU-сервера": 1666666.67,
+    "Электроэнергия": 35064.0,
+    "Команда продукта и инференса": 0,
+    "Лицензии активных пользователей": 173333.33
+  },
   "monthly_amortization_rub": 1666666.67,
   "monthly_electricity_rub": 35064.0,
   "monthly_team_rub": 0,
   "monthly_licenses_rub": 173333.33,
   "monthly_tco_rub": 1875064.0,
   "period_tco_rub": 5625192.0,
-  "cost_per_token_rub": 0.9332034911402611,
+  "allocated_workload_cost_rub": 5625192.0,
+  "comparison_cost_rub": 5625192.0,
+  "cost_per_token_rub": 0.933203491140261,
   "cost_per_million_tokens_rub": 933203.49,
   "fte_minute_cost_rub": 37.88,
   "modeled_minutes_saved": 1840.0,
@@ -18,6 +30,9 @@
   "net_benefit_rub": -5576404.12,
   "roi_percent": -99.13,
   "business_case_positive": false,
+  "break_even_minutes": 212150,
+  "break_even_dialogs": 11530,
+  "additional_minutes_needed": 210310,
   "agent_failures": 0,
   "recovered_errors": 10,
   "agents": [
@@ -62,5 +77,5 @@
       "business_case_positive": false
     }
   ],
-  "decision": "При текущих допущениях B ≤ A: увеличьте загрузку, подтвердите экономию времени или пересмотрите TCO перед масштабированием."
+  "decision": "Масштабирование пока не обосновано: наблюдаемая экономия FTE не покрывает стоимость нагрузки. Нужны выше загрузка, больше подтверждённой экономии времени или меньший TCO."
 }

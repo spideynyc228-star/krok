@@ -13,6 +13,13 @@ class PipelineTest(unittest.TestCase):
         result = build_economics(rows, EconomicsConfig(server_capex_rub=1200, amortization_years=1, server_power_kw=0, monthly_license_per_active_user_rub=0, value_realisation_rate=1))
         self.assertAlmostEqual(result["summary"]["period_tco_rub"], result["by_request"]["a"]["allocated_cost_rub"], places=2)
 
+    def test_capacity_keeps_platform_tco_separate_from_workload_cost(self):
+        rows = [{"request_id": "a", "agent_id": "x", "user_id": "u", "created_at": "2026-01-05", "total_tokens_est": 100, "estimated_minutes_saved": 20, "agent_failed": False}]
+        config = EconomicsConfig(server_capex_rub=1200, amortization_years=1, server_power_kw=0, monthly_license_per_active_user_rub=0, monthly_token_capacity=1_000, value_realisation_rate=1)
+        result = build_economics(rows, config)
+        self.assertGreater(result["summary"]["period_tco_rub"], result["summary"]["allocated_workload_cost_rub"])
+        self.assertEqual(result["summary"]["capacity_utilisation"], 0.1)
+
     def test_pipeline_writes_a_report(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
