@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+models/
+.DS_Store
+# Stale output from the retired prototype; the supported pipeline writes
+# analytics.csv, use_cases.csv and agents_roi.csv instead.
+outputs/dialogs.csv

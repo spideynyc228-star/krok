@@ -1,0 +1,8 @@
+{
+  "valid_dialogs": 100,
+  "invalid_files": [],
+  "classification_source": {
+    "source_label": 100
+  },
+  "token_count_method": "chars_div_4_estimate; replace with model usage counters in production"
+}

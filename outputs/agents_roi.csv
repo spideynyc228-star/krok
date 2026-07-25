@@ -1,0 +1,5 @@
+﻿agent_id,dialogs,total_tokens_est,allocated_cost_rub,fte_savings_rub,net_benefit_rub,roi_percent,business_case_positive
+agent_engineering_04,27,1623706,1515248.13,14291.65,-1500956.48,-99.06,False
+agent_project_03,23,1389100,1296312.95,11162.87,-1285150.08,-99.14,False
+agent_sales_02,29,1765311,1647394.38,14742.39,-1632651.99,-99.11,False
+agent_workplace_01,21,1249713,1166236.54,8590.89,-1157645.65,-99.26,False

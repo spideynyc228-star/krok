@@ -1,0 +1,2 @@
+# The production baseline is intentionally dependency-free (Python 3.10+).
+# Optional legacy ML experiment dependencies live in requirements-ml.txt.

@@ -1,0 +1,15 @@
+{
+  "server_capex_rub": 100000000,
+  "amortization_years": 5,
+  "server_power_kw": 10.0,
+  "electricity_rub_per_kwh": 8.0,
+  "utilisation": 0.6,
+  "monthly_product_and_inference_team_rub": 0,
+  "monthly_license_per_active_user_rub": 10000,
+  "monthly_token_capacity": null,
+  "monthly_fte_rub": 400000,
+  "working_days_per_month": 22,
+  "working_hours_per_day": 8,
+  "value_realisation_rate": 0.7,
+  "minutes_by_category": {}
+}

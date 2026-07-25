@@ -1,0 +1,66 @@
+{
+  "dialogs": 100,
+  "period_months": 3,
+  "active_user_months": 52,
+  "total_tokens_est": 6027830,
+  "monthly_amortization_rub": 1666666.67,
+  "monthly_electricity_rub": 35064.0,
+  "monthly_team_rub": 0,
+  "monthly_licenses_rub": 173333.33,
+  "monthly_tco_rub": 1875064.0,
+  "period_tco_rub": 5625192.0,
+  "cost_per_token_rub": 0.9332034911402611,
+  "cost_per_million_tokens_rub": 933203.49,
+  "fte_minute_cost_rub": 37.88,
+  "modeled_minutes_saved": 1840.0,
+  "value_realisation_rate": 0.7,
+  "fte_savings_rub": 48787.88,
+  "net_benefit_rub": -5576404.12,
+  "roi_percent": -99.13,
+  "business_case_positive": false,
+  "agent_failures": 0,
+  "recovered_errors": 10,
+  "agents": [
+    {
+      "agent_id": "agent_engineering_04",
+      "dialogs": 27,
+      "total_tokens_est": 1623706,
+      "allocated_cost_rub": 1515248.13,
+      "fte_savings_rub": 14291.65,
+      "net_benefit_rub": -1500956.48,
+      "roi_percent": -99.06,
+      "business_case_positive": false
+    },
+    {
+      "agent_id": "agent_project_03",
+      "dialogs": 23,
+      "total_tokens_est": 1389100,
+      "allocated_cost_rub": 1296312.95,
+      "fte_savings_rub": 11162.87,
+      "net_benefit_rub": -1285150.08,
+      "roi_percent": -99.14,
+      "business_case_positive": false
+    },
+    {
+      "agent_id": "agent_sales_02",
+      "dialogs": 29,
+      "total_tokens_est": 1765311,
+      "allocated_cost_rub": 1647394.38,
+      "fte_savings_rub": 14742.39,
+      "net_benefit_rub": -1632651.99,
+      "roi_percent": -99.11,
+      "business_case_positive": false
+    },
+    {
+      "agent_id": "agent_workplace_01",
+      "dialogs": 21,
+      "total_tokens_est": 1249713,
+      "allocated_cost_rub": 1166236.54,
+      "fte_savings_rub": 8590.89,
+      "net_benefit_rub": -1157645.65,
+      "roi_percent": -99.26,
+      "business_case_positive": false
+    }
+  ],
+  "decision": "При текущих допущениях B ≤ A: увеличьте загрузку, подтвердите экономию времени или пересмотрите TCO перед масштабированием."
+}
